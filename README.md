@@ -24,13 +24,21 @@ Read the following steps to use.
    
    
    OR​ : Used to combine two triggers or more . trigger execute if one or more triggers you provide are present in news
+
 3.Format of adding lines to triggers.txt.
+
 Name of text,Type of trigger(Case Sensitive use as shown above in capital letters),Phrase you want your news to include(Not case Sensitive)
+
 e.g: t1,TITTLE,YES BANK (will return all the news whose title contains yes bank)
-     t2,DESCRIPTION,Reliance (will return all the news whose description contains Reliance)
-     t3,AND,t1,t2 (in case of and,or provide the triggers you wish to combine)
+
+t2,DESCRIPTION,Reliance (will return all the news whose description contains Reliance)
+
+t3,AND,t1,t2 (in case of and,or provide the triggers you wish to combine)
 
 4.After creating the triggers you want add them in last line as shown
-	ADD,t1,t2,t3
+
+ADD,t1,t2,t3
+
 5.Save trigger.txt
+
 6.Run ps5.py file (Program refreshes after 2 minutes to find a new news if present)
